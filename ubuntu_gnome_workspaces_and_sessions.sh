@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install gnome-tweak-tool
+sudo apt install gnome-tweak-tool
 gnome-tweaks
 
 mkdir ~/.local/share/gnome-shell/extensions/
@@ -10,9 +10,10 @@ cd gnome-shell-extension-workspace-matrix
 makepkg -sri
 
 #window session manager extension
-apt install nodejs
+sudo apt install nodejs
 node -v
-npm install -g linux-window-session-manager
+sudo apt install npm
+sudo npm install -g linux-window-session-manager
 which lwsm
 mkdir ~/.local/share/gnome-shell/extensions/lwsm@johannes.super-productivity.com
 cd tmp
