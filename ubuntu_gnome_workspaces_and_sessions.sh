@@ -16,7 +16,7 @@ sudo apt install npm
 sudo npm install -g linux-window-session-manager
 which lwsm
 mkdir ~/.local/share/gnome-shell/extensions/lwsm@johannes.super-productivity.com
-cd tmp
+cd ~/.local/share/gnome-shell/extensions/lwsm@johannes.super-productivity.com
 git clone git@github.com:johannesjo/gnome-shell-extension-window-session-manager.git
 mv gnome-shell-extension-window-session-manager /home/$(whoami)/.local/share/gnome-shell/extensions/lwsm@johannes.super-productivity.com
 
